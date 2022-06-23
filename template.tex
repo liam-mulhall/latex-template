@@ -1,0 +1,65 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TOP MATTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+% (1) Packages
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[yyyymmdd]{datetime}
+\usepackage{fancyhdr}
+\usepackage[left=2cm,
+            right=2cm,
+            top=2cm,
+            bottom=2cm,
+            headheight=18pt,
+            includehead,
+            includefoot,
+            heightrounded]{geometry}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{parskip}
+
+% (2) Commands
+\AtBeginDocument{\renewcommand{\hbar}{\hslash}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\renewcommand{\dateseparator}{-}
+
+% (3) Miscellaneous
+\lstset{
+    numbers = left,
+    numberstyle = \small,
+    numbersep = 8pt,
+    frame = single,
+    language = C++,
+    framexleftmargin = 16pt
+}
+\pagestyle{fancyplain}
+    \fancyhf{}
+    \lhead{ \fancyplain{}{Liam Mulhall} }
+    \chead{ \fancyplain{}{Dr. Strangelove} }
+    \rhead{ \fancyplain{}{Underwater Basket Weaving} }
+    \lfoot{ \fancyplain{}{\today} }
+    \cfoot{ \fancyplain{}{} }
+    \rfoot{ \fancyplain{}{\thepage} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BODY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+	\Large{For Whom the Bell Tolls}
+\end{center}
+
+\lipsum
+
+\end{document}
